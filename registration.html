@@ -9,10 +9,36 @@
     <link rel="stylesheet" >
 	<title>Registration page</title>
     <style>
+		.container
+        {
+           position:relative; 
+
+        }
+        .img
+        {
+            width:200px;
+			height: 100vh;
+            margin:20px 200px 20px 200px;
+        }
+        .col-sm-4{
+            position: absolute;
+            background-color: rgb(227, 176, 9);
+            width:400px;
+            height:400px;
+            bottom:50%;
+            right:40%;
+            transform: translate(25%,45%);
+		
+        }
+        table
+        {
+            margin: 5% 2%;
+        }
+        
+       
         
     </style>
-</head>
-<body>
+
     
 
 
@@ -32,24 +58,30 @@
 	
   </div>	
   </form> -->
-
-  <div class="container">	
-	<form name="registration_form" class="d-none" class="register_class " id="registration_form" method="post" action="#" enctype="multipart/form-data" >
-	<div class="row">
   
+  <div class="container">	
+	<img  class="im" src="./images/sell-02-1920x900.jpg">
+	<form name="registration_form" class="d-none" class="register_class " id="registration_form" method="post" action="#" enctype="multipart/form-data" >
+	<!--<div class="row">-->
+      
 	  <div class="col-sm-4">
-		  <div class="form-group">
-			<label for="email">Email</label>
-			<input type="text" name="email" id="email" class="form-control" placeholder="Enter your email">
-		  </div>
+		 <!--<div class="form-group">--> 
+			<h1 style="margin: 20% 20%;">Login Here</h1>
+			<table class="form-group">
+			<tr >
+			<td><label for="email">Email</label></td>
+			<td><input type="text" name="email" id="email" class="form-control" placeholder="Enter your email"></td>
+			</tr>
 		  
-		  <div class="form-group">
-			<label for="password" >Password</label>
-			<input type="password" name="password" id="password" class="form-control"  placeholder="Enter your password">
-		  </div>
-		  <button type="button" id="register" name="register" class="btn btn-success">Register Now</button>
-		  <button type="button" class="btn btn-success" style="margin-left:10px;"><a href="./sign_in.html" style="text-decoration: none; color:white">Sign in</a> </button>
-	  </div>
+			<tr>
+			<td><label for="password" >Password</label></td>
+			<td><input type="password" name="password" id="password" class="form-control"  placeholder="Enter your password"></td>
+		    </tr>
+		    </table>
+		  <button  style="margin:10px 0 0 70px ;"type="button" id="register" name="register" class="btn btn-success">Register Now</button>
+		  <button style="margin:10px 70px 0 0;"ttype="button" class="btn btn-success" style="margin-left:10px;"><a href="./sign_in.html" style="text-decoration: none; color:white">Sign in</a> </button>
+		
+		</div>
 	  </form>
 	  
 	  <!-- <form name="login_form" id="login_form" method="post" action="#" enctype="multipart/form-data" >
